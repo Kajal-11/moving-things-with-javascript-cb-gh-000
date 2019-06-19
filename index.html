@@ -30,7 +30,7 @@
         var right = document.getElementById('game').style.width.replace('px', '')
         var rightLimit = parseInt(right, 10)
 
-        if(left > right)
+        if(left < right)
           dodger.style.left = `${left + 1}px`
       }
 
