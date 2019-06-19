@@ -28,7 +28,8 @@
         var leftNumbers = dodger.style.left.replace('px', '')
         var left = parseInt(leftNumbers, 10)
         var right = document.getElementById('game').offsetWidth
-        if(left < right)
+        var dwidth = document.getElementById('dodger').offsetWidth
+        if(left < right-dwidth)
           dodger.style.left = `${left + 1}px`
       }
 
